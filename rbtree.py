@@ -118,7 +118,7 @@ def nodes_between_helper(lower, upper, nodes):
     if height(lower) <= height(upper):
         return []
 
-    return nodes_between_helper(upper, lower.parent, [lower] + nodes)
+    return nodes_between_helper(lower.parent, upper, [lower] + nodes)
 
 # This returns an inclusive list
 def nodes_between(lower, upper):
